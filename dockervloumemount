@@ -1,0 +1,24 @@
+sudo docker volume create myvolume1
+
+sudo docker volume ls
+
+sudo docker inspect volume  myvolume
+
+ sudo docker run --name ubuntuvol1 -it  --mount source=myvolume,target=/app  ubuntu:latest
+
+cd app
+ ls 
+ 
+ touch file1.txt
+ 
+ cat>>file1.txt
+
+cat file1.tx
+
+exit
+
+sudo docker run --name centosvol3 -it  --mount source=myvolume,target=/app  centos:latest
+
+cd app
+
+ls
