@@ -1,0 +1,41 @@
+Sudo apt-get install docker
+
+docker –version
+
+mkdir doc
+
+cd doc
+
+gedit index.html
+
+<!DOCTYPE html> <html> <body> <h1>My First Heading</h1> <p>My first paragraph.</p> </body> </html>
+
+gedit Dockerfile
+
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install apache2 -y
+
+ADD . /var/www/html
+
+ENTRYPOINT apachectl -D FOREGROUND
+
+EXPOSE 80
+
+sudo docker build -t web .
+
+sudo docker run -it -d -p 8087:80 --name sup1 web
+
+-------------------------------------------------------------------------------------------------------
+
+mkdir vol
+
+cd vol
+
+mkdir app
+
+sudo docker volume create myvol
+
+sudo docker volume ls
+
+sudo docker inspect volume myvol
