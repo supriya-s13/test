@@ -1,0 +1,45 @@
+git init
+git add .
+git commit -m "   " 
+git remopte add origin url
+git branch -M main/master
+git push -u origin main/master
+git pull origin main/master
+forking/cloning
+vi test.txt
+cat text
+git status
+git add text.tx
+git commit -m " "
+git status
+git push
+Branching
+create folder as branch
+git branch ftr1
+git branch ftr2
+git branch
+git checkout ftr1
+git graph
+ls
+vi index.html
+git add .
+git commit -m ""
+git graph
+git branch
+git checkout ftr1
+git status
+checkout ftr2
+vi index.html
+git commit -am ""
+git checkout master
+merging
+git checkout master
+gi dif master
+git merge ftr1
+git grapg
+cat master
+git branch --merge 
+git branch -d ftr1
+git branch -d fyr2
+git branch -D ftr2
+git graph
