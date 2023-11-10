@@ -1,2 +1,6 @@
 docker pull jenkins:2.60.3
 docker run -p 8087:8080 -p 50000:50000 -v jenkinsvol:/var/lib/test/jenkinsvol jenkins/jenkins
+
+to push to docker hub // for other
+docker login
+docker push username/imagename:tag
