@@ -2,7 +2,7 @@ git init
 git add .
 git commit -m "   " 
 git remote rm origin
-git remopte add origin url
+git remote add origin url
 git branch -M main/master
 git push -u origin main/master
 git pull origin main/master
